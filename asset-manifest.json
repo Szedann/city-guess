@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/city-guess/static/css/main.4982c5d1.css",
+    "main.js": "/city-guess/static/js/main.43177ddc.js",
+    "index.html": "/city-guess/index.html",
+    "main.4982c5d1.css.map": "/city-guess/static/css/main.4982c5d1.css.map",
+    "main.43177ddc.js.map": "/city-guess/static/js/main.43177ddc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4982c5d1.css",
+    "static/js/main.43177ddc.js"
+  ]
+}
