@@ -32,13 +32,14 @@ body {
   background-color: #eaffff;
 }
 .marker{
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   transform: translate(-50%, -50%);
   display: block;
   border-radius: 50%;
-  background-image: radial-gradient(#00ffff,#00f0);
   background-size: contain;
+  background-color: #53A4F5;
+  box-shadow: 0 0 3px 2px #53A4F5;
 }
 
 .PreviousCities{
@@ -61,7 +62,7 @@ body {
   overflow: hidden;
 }
 
-.PreviousCities h3{
+.PreviousCities h4{
   margin: 3pt;
   font-size: 1.2em;
 }
@@ -75,12 +76,59 @@ body {
 
 .PreviousCities .prevCity{
   padding: 3pt;
-  margin: 1pt;
-  border-radius: 1pt;
+  border-left: 2px solid;
 }
 .PreviousCities .correct{
-  border-left: 2px solid greenyellow;
+  border-color: greenyellow;
 }
 .PreviousCities .incorrect{
-  border-left: 2px solid red;
+  border-color: red;
+}
+
+.optionsCard{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #eaffff77;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.optionsWrapper input{
+  outline: 0;
+  background-color: #fff;
+  border: 0;
+  border-radius: 5pt;
+  font-size: 1em;
+  font-family: inherit;
+  box-shadow: 0 3pt 5pt #0004;
+  margin: 5px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 5pt;
+}
+
+.optionsButton{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 40;
+  margin: 10px;
+  filter: drop-shadow(0 3pt 5pt #0004);
+
+}
+
+.optionsButton svg{
+  fill: #fff;
 }
